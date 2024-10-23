@@ -1,19 +1,23 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='uvceml',
     version='0.1',
-    py_modules=['uvceml'],  # this should be the name of your Python file without the .py extension
+    description='List Of ML Programs',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/Ganesh57803/uvceml',
+    author='Ganesh',
+    author_email='ganesh4study@gmailcom',
+    license='MIT',
+    packages=find_packages(),
     install_requires=[
         'numpy',
         'pandas',
-        'matplotlib',
         'scikit-learn',
         'pgmpy',
+        'matplotlib'
     ],
-    author='Ganesh',
-    author_email='ganesh4study@email.com',
-    description='A Python package implementing various machine learning algorithms of uvce',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
